@@ -16,6 +16,8 @@ int main() {
     std::cout << "Направление (left/right): ";
     std::cin >> direction;
 
+    if (numbers.empty()) return 0;
+
     std::cout << "Результат: ";
     for (int n : numbers) std::cout << n << " ";
     std::cout << "\n";
