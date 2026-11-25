@@ -14,4 +14,11 @@ int main() {
         std::cout << "Список пуст.\n";
         return 0;
     }
+
+    // Для нахождения медианы список обязательно нужно отсортировать
+    std::sort(numbers.begin(), numbers.end());
+
+    size_t n = numbers.size();
+    double median;
+
 }
