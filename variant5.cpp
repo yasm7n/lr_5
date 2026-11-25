@@ -9,4 +9,9 @@ int main() {
     std::cout << "Исходный список: ";
     for (double n : numbers) std::cout << n << " ";
     std::cout << "\n";
+
+    if (numbers.empty()) {
+        std::cout << "Список пуст.\n";
+        return 0;
+    }
 }
