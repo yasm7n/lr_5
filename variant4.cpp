@@ -18,6 +18,16 @@ int main() {
 
     if (numbers.empty()) return 0;
 
+        int shift = k % numbers.size();
+
+    if (direction == "left" || direction == "влево") {
+        // Сдвиг влево
+        std::rotate(numbers.begin(), numbers.begin() + shift, numbers.end());
+    } else {
+        // Сдвиг вправо
+        std::rotate(numbers.begin(), numbers.end() - shift, numbers.end());
+    }
+
     std::cout << "Результат: ";
     for (int n : numbers) std::cout << n << " ";
     std::cout << "\n";
