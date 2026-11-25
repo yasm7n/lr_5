@@ -21,4 +21,15 @@ int main() {
     size_t n = numbers.size();
     double median;
 
+    if (n % 2 != 0) {
+        // Если нечетное количество, берем центральный элемент
+        median = numbers[n / 2];
+    } else {
+        // Если четное, берем среднее арифметическое двух центральных
+        median = (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;
+    }
+
+    std::cout << "Медиана: " << median << "\n";
+
+    return 0;
 }
